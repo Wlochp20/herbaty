@@ -1,19 +1,92 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #f6f7eb;
+}
+body, html{
+  height:100%;
 }
 header {
-  height: 200px;
-  width: 100%;
-  background: #6e7346;
+  text-align: center;
+  border-right: 1px solid black;
+  z-index: 2;
+  position: -webkit-sticky;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 25%;
+  background: #6E7346;
 }
-footer {
+section{
+  overflow: hidden;
+  margin-left: 25%;
+  width: 75%;
+}
+.zielona{
+  width: 75%;
+  background: #C8CF82;
+  height: 110%;
+  
+}
+ p{
+  text-align: center;
+  color: #F6F7EB;
+  font-size: 90px;
+  text-transform: uppercase;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+nav {
+  text-align: center;
+  top: 250px;
+  width: 25%;
+  position: fixed;
+  z-index: 3;
+}
+nav a{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  color:#F6F7EB ;
+  font-size: 25px;
+  padding: 30px 16%;
+  
+
+}
+nav ul{
+  margin: 0;
+}
+li:hover{
+  background: #606441;
+  width: 103%;
+  cursor: pointer;
+}
+nav li{
+  width: 95%;
+  margin-left: -15px;
+  border-bottom: 1px solid #F6F7EB;
+  padding: 35px 0px;
+  list-style-type: none;
+}
+.start{
+  z-index: 1;
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 200px;
-  background-color: #00120b;
+  top: 0;
+  width: 75%;
+  height: 100%;
+  background-color: #F6F7EB;
+}
+.czarna{
+  width: 75%;
+  height: 110%;
+  background-color: #00120B;
+}
+.biala{
+  width: 75%;
+  height: 120%;
+  background-color: #F6F7EB;
+}
+.zolta{
+  width: 75%;
+  height: 120%;
+  background-color: #eec973;
 }
 header input {
   display: none;
