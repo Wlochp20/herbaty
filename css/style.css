@@ -2,6 +2,21 @@ body {
   margin: 0;
   padding: 0;
 }
+.herbaty{
+  position: absolute;
+  display: block;
+  visibility: hidden;
+  left: 100%;
+  bottom: 0;
+  width: 100%;
+  background-color: #a1ac4d;
+  transition: visibility 1s ease-out ;
+
+}
+.herbatybtn:hover .herbaty{
+  display: block;
+  visibility: visible;
+}
 body, html{
   height:100%;
 }
@@ -55,7 +70,7 @@ nav ul{
 }
 li:hover{
   background: #606441;
-  width: 103%;
+ 
   cursor: pointer;
 }
 nav li{
