@@ -3,20 +3,25 @@ body {
   padding: 0;
 }
 .herbaty{
+  /* visibility: hidden; */
   position: absolute;
-  display: block;
-  visibility: hidden;
-  left: 100%;
-  bottom: 0;
+  left: 0;
+  bottom:-100;
+  display: none;
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 150px;
   width: 100%;
-  background-color: #a1ac4d;
-  transition: visibility 1s ease-out ;
+  background-color: rgb(53, 28, 28);
+  /* transition: visibility 1s ease-out ; */
 
 }
 .herbatybtn:hover .herbaty{
   display: block;
   visibility: visible;
 }
+
 body, html{
   height:100%;
 }
@@ -29,7 +34,7 @@ header {
   top: 0;
   height: 100%;
   width: 25%;
-  background: #6E7346;
+  background: #424525;
 }
 section{
   overflow: hidden;
@@ -57,10 +62,15 @@ nav {
   z-index: 3;
 }
 nav a{
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+font-family:monospace;
+font-size: 30px;
+
+color: #F6F7EB;
   text-decoration: none;
   color:#F6F7EB ;
-  font-size: 25px;
+
   padding: 30px 16%;
   
 
