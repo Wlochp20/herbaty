@@ -1,12 +1,13 @@
 body {
   margin: 0;
+  font-family: arial;
   padding: 0;
 }
-.herbaty{
+.herbaty {
   /* visibility: hidden; */
   position: absolute;
   left: 0;
-  bottom:-100;
+  bottom: -100;
   display: none;
   color: white;
   margin: 0;
@@ -14,115 +15,138 @@ body {
   height: 150px;
   width: 100%;
   background-color: rgb(53, 28, 28);
-  /* transition: visibility 1s ease-out ; */
 
+  /* transition: visibility 1s ease-out ; */
 }
-.herbatybtn:hover .herbaty{
+.start span {
+  font-family: "Redressed", cursive;
+  z-index: 5;
+  position: absolute;
+  margin: 350px 30%;
+  color: #f6f7eb;
+  font-size: 40px;
+  text-align: center;
+}
+.start img {
+  z-index: 0;
+  top: 0;
+
+  position: absolute;
+}
+.herbatybtn:hover .herbaty {
   display: block;
   visibility: visible;
 }
 
-body, html{
-  height:100%;
+body,
+html {
+  height: 100%;
 }
+
 header {
+  box-shadow: 8px 8px 24px 0px #252521;
   text-align: center;
-  border-right: 1px solid black;
   z-index: 2;
   position: -webkit-sticky;
   position: fixed;
   top: 0;
   height: 100%;
-  width: 25%;
-  background: #424525;
+  width: 20%;
+  background: #393b26;
 }
-section{
+section {
   overflow: hidden;
-  margin-left: 25%;
-  width: 75%;
+  margin-left: 20%;
+  width: 80%;
 }
-.zielona{
-  width: 75%;
-  background: #C8CF82;
+.zielona {
+  background: #c8cf82;
   height: 110%;
-  
 }
- p{
+p {
   text-align: center;
-  color: #F6F7EB;
+  color: #f6f7eb;
   font-size: 90px;
   text-transform: uppercase;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 nav {
   text-align: center;
-  top: 250px;
-  width: 25%;
+  top: 330px;
+  width: 20%;
   position: fixed;
   z-index: 3;
 }
-nav a{
-
-
-font-family:monospace;
-font-size: 30px;
-
-color: #F6F7EB;
+nav a {
+  font-size: 30px;
+  color: #f6f7eb;
   text-decoration: none;
-  color:#F6F7EB ;
+  color: #f6f7eb;
 
   padding: 30px 16%;
-  
-
 }
-nav ul{
+nav ul {
   margin: 0;
 }
-li:hover{
+li:hover {
   background: #606441;
- 
+
   cursor: pointer;
 }
-nav li{
+nav li {
   width: 95%;
   margin-left: -15px;
-  border-bottom: 1px solid #F6F7EB;
+  border-bottom: 1px solid #f6f7eb;
   padding: 35px 0px;
+  margin-bottom:20px;
   list-style-type: none;
 }
-.start{
+.start {
   z-index: 1;
   position: absolute;
   top: 0;
-  width: 75%;
   height: 100%;
-  background-color: #F6F7EB;
+  background-color: #f6f7eb;
 }
-.czarna{
-  width: 75%;
+.czarna {
   height: 110%;
-  background-color: #00120B;
+  background-color: #00120b;
 }
-.biala{
-  width: 75%;
+.biala {
+  
   height: 120%;
-  background-color: #F6F7EB;
+  background-color: #f6f7eb;
 }
-.zolta{
-  width: 75%;
+.biala p{
+  color: #00120b;
+}
+.zolta {
   height: 120%;
   background-color: #eec973;
+}
+.oferta {
+  height: 120%;
+ 
+  background-color: #F6F7EB;
+}
+.oferta p{
+  color: #00120b;
+}
+.formularz {
+  height: 120%;
+  background-color: #C8CF82;
 }
 header input {
   display: none;
 }
 .menu_r {
-  float: right;
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: -5px;
   width: 100px;
   height: 20px;
-  
 }
-.menu_r label {
+.menu_r .navicon {
   margin: 40px;
   display: block;
   cursor: pointer;
@@ -131,19 +155,33 @@ header input {
   height: 6px;
   background: #f6f7eb;
 }
-.menu_r label::before{
-    content: "";
-    position: absolute;
-    display: block;
-    border-radius: 6px;
-    width: 53px;
-    height: 6px;
-    background: #f6f7eb;
-    margin-top: -10px;
+.menu_r .navicon::before {
+  content: "";
+  position: absolute;
+  display: block;
+  border-radius: 6px;
+  width: 53px;
+  height: 6px;
+  background: #f6f7eb;
+  margin-top: -10px;
+  transition: transform 0.2s;
 }
 
-.menu_r label::after {
+header .menu-btn:checked ~.menu-icon .navicon{
+  background-color: transparent;
+}
+header .menu-btn:checked ~.menu-icon .navicon::before{
+  transform: rotate(45deg) translate(13px);
+  right: 20px;
+}
+
+header .menu-btn:checked ~.menu-icon .navicon::after{
+  transform: rotate(-45deg) translate(15px);
+  right: 20px;
+}  
+.menu_r .navicon::after {
   content: "";
+  transition: transform 0.2s;
   display: block;
   position: absolute;
   border-radius: 6px;
@@ -152,4 +190,64 @@ header input {
   background: #f6f7eb;
   margin-top: 10px;
 }
+footer {
+  height: 200px;
+  background-color: #000000;
+}
+@media screen and (max-width:1171px ) {
+  header{
+    width: 100%;
+    height: 100px;
+  }
+  .start span{
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin: 450px auto;
+  }
+  header img{
+    display: none;
+  }
+  section{
+    width: 100%;
+    margin: 0;
+  }
+  nav li{
+    margin: 5px;
+    border: 0;
+    width: 200px;
+    display: inline-block;
+  }
+  nav{
+    top:0;
+    width: 100%;
+    height: 100px;
+  }
+}
+@media screen and (max-width:909px ){
+  header{
+    height: 140px;
+  }
+  nav{
+    display: none;
+  }
+  header img{
+    content:url("../img/logotel.png");
+    display: block;
+    margin: 0 auto;
+  }
+  .menu_r {
+    display: block;
+  }
+  .menu_r span{
+    display: block;
+  }
+  .menu-btn:checked .back .back nav{
+    display: block;
+  }
+  .start img{
+    src: url(../img/tlotel.jpg) !important;
+  }
 
+
+}
