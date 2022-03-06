@@ -3,7 +3,7 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Redressed&family=Roboto:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,36 +21,89 @@
     <nav>
         <ul class="menu">
             <li><a href="#">Herbaty</a></li>
-            <li><a href="#">kontakt</a></li>
-            <li><a href="#">Oferta</a></li>
-            <li><a href="#">o mnie</a></li>
+            <li><a href="#start">start</a></li>
+            <li><a href="#oferta">Oferta</a></li>
+            <li><a href="#form">Formularz</a></li>
         
 
         </ul>
     </nav>
-    <section class="start"><span>Sometimes all you need is a good cup of Tea</span> <img src="img/tlo.jpg" alt="liscie"></section>
+    <section id="start" class="start"><span>Sometimes all you need is a good cup of Tea</span> <img class="komp" src="img/tlo.jpg"  alt="liscie"><img class="tel" src="img/tlotel.png" alt="liscie"></section>
     <section class="czarna">   </section>
     <section class="czarna">
         <p>czarna</p>
-        <div class="galeria"></div>
+        <div class="galeria">
+            <img class="her1" src="img/herbata1.png" alt="herbata_z_kwiatkami">
+            <img class="her2" src="img/herbata2.png" alt="herbata__na_obrusie">
+            <img class="her3" src="img/herbata3.png" alt="czarna_herbata_na_deskach">
+            <img class="her4" src="img/herbata4.png" alt="czarna_herbata_z_czarno-białym_tłem">
+            <img class="her5" src="img/herbata5.png" alt="dwa_czajniczki">
+        </div>
     </section>
     <section class="zielona">
         <p>zielona</p>
+        <div class="galeria">
+            <img class="her1" src="img/herbata1.png" alt="herbata_z_kwiatkami">
+            <img class="her2" src="img/herbata2.png" alt="herbata__na_obrusie">
+            <img class="her3" src="img/herbata3.png" alt="czarna_herbata_na_deskach">
+            <img class="her4" src="img/herbata4.png" alt="czarna_herbata_z_czarno-białym_tłem">
+            <img class="her5" src="img/herbata5.png" alt="dwa_czajniczki">
+        </div>
     </section>
     <section class="biala">
-        
         <p>biała</p>
+        <div class="galeria">
+            <img class="her1" src="img/herbata1.png" alt="herbata_z_kwiatkami">
+            <img class="her2" src="img/herbata2.png" alt="herbata__na_obrusie">
+            <img class="her3" src="img/herbata3.png" alt="czarna_herbata_na_deskach">
+            <img class="her4" src="img/herbata4.png" alt="czarna_herbata_z_czarno-białym_tłem">
+            <img class="her5" src="img/herbata5.png" alt="dwa_czajniczki">
+        </div>
     </section>
     <section class="zolta">
         <p>żółta</p>
+        <div class="galeria">
+            <img class="her1" src="img/herbata1.png" alt="herbata_z_kwiatkami">
+            <img class="her2" src="img/herbata2.png" alt="herbata__na_obrusie">
+            <img class="her3" src="img/herbata3.png" alt="czarna_herbata_na_deskach">
+            <img class="her4" src="img/herbata4.png" alt="czarna_herbata_z_czarno-białym_tłem">
+            <img class="her5" src="img/herbata5.png" alt="dwa_czajniczki">
+        </div>
     </section> 
-    <section class="oferta">
+    <section id="oferta" class="oferta">
+        <img src="img/ywave.png" alt="żółta_fala" class="wf">
         <p>oferta</p>
+        <div class="rof">
+            <div><img class="strzalki" src="img/strzalkilewo.png" alt="strzalka_w_lewo"></div>
+            <div class="ofer"><img src="img/roibos.png" alt="herbata_roibos"><span class="title" >Roibos</span><span class="opis">Rooibos z dodatkiem truskawki, lawendy i mięty.</span><span class="cena">39.99zł</span></div>
+            <div class="ofer"><img src="img/roibos.png" alt="herbata_roibos"><span class="title" >Roibos</span><span class="opis">Rooibos z dodatkiem truskawki, lawendy i mięty.</span><span class="cena">39.99zł</span></div>
+            <div class="ofer"><img src="img/roibos.png" alt="herbata_roibos"><span class="title" >Roibos</span><span class="opis">Rooibos z dodatkiem truskawki, lawendy i mięty.</span><span class="cena">39.99zł</span></div>
+
+            <div><img class="strzalki" src="img/strzalkiprawo.png" alt="strzalka_w_prawo"></div>
+        </div>
+        
+
     </section> 
-    <section class="formularz">
+    <section id="form" class="formularz">
+        <img src="img/wave.png" alt="biala_fala">
         <p>formularz</p>
+        
+        <label for="im">imie</label>
+        <input type="text" name="imie" id="im">
+        <label for="na">nazwisko</label>
+        <input type="text" name="nazwisko" id="na">
+        <label for="email">e-mail</label>
+        <input type="text" name="e-mail" id="email">
+        <label for="wia">wiadomosc</label>
+        <textarea name="wiadomosc" id="wia" cols="30" rows="10"></textarea>
+        <input class="inp" type="button" value="wyślij">
+    
     </section> 
-    <footer></footer>
+    <footer>
+        <span class="tyt">Aleksandra Włoch</span>
+        <span id="em">e-mail: herbatka@gmail.com</span>
+        <span  id="tel">telefon: 123 456 789</span>
+    </footer>
     <!-- <footer></footer>
 </body>
 </html>
