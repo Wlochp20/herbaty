@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: arial;
+   font-family: 'Roboto', sans-serif;
   padding: 0;
 }
 .herbaty {
@@ -18,6 +18,34 @@ body {
 
   /* transition: visibility 1s ease-out ; */
 }
+.her1{
+  grid-column-start: 2;
+  
+}
+.her4{
+  
+  grid-column-start: 3;
+
+}
+.her2{
+  grid-column: 3/5;
+}
+.her3{
+  margin-left: -42px;
+  grid-column-start: 4;
+  grid-row-start: 2;
+}
+.her5{
+  margin-left: -42px;
+  margin-top: 140px;
+  grid-column-start: 4;
+  grid-row-start: 2;
+}
+
+.galeria{
+  display: grid;
+  grid-template: repeat(3,270px)/repeat(6,1fr);
+}
 .start span {
   font-family: "Redressed", cursive;
   z-index: 5;
@@ -30,7 +58,7 @@ body {
 .start img {
   z-index: 0;
   top: 0;
-
+  width: 100%;
   position: absolute;
 }
 .herbatybtn:hover .herbaty {
@@ -134,6 +162,69 @@ nav li {
 .formularz {
   height: 120%;
   background-color: #C8CF82;
+  display: grid;
+  grid-template: 200px repeat(15,60px)/repeat(5,1fr);
+}
+.formularz p{
+  grid-column: 3/4;
+  grid-row: 2/4;
+}
+.formularz img{
+  width: 100%;
+  grid-row: 1/3;
+  grid-column:1/7;
+}
+#im{
+  grid-row: 8/9;
+  grid-column-start: 2;
+}
+label[for=im]{
+  grid-column-start: 2;
+  grid-row-start: 7;
+}
+label[for=na]{
+  grid-column-start: 2;
+  grid-row-start: 9;
+}
+#na{
+  grid-row: 10/11;
+  grid-column-start: 2;
+}
+label[for=email]{
+  grid-column-start: 2;
+  grid-row-start: 11;
+}
+#email{
+  grid-row: 12/13;
+  grid-column-start: 2;
+}
+.formularz input{
+  width: 309px;
+  height: 38px;
+  border-radius: 10px;
+  border: 0;
+}
+#wia{
+  grid-column: 4/5;
+  grid-row: 8/13;
+  border: 0;
+  border-radius: 10px;
+}
+.inp{
+  background-color: #3f3c3c;
+  color: whitesmoke;
+  width: 500px;
+  font-size: larger;
+  grid-column: 2/5;
+  grid-row-start: 15;
+}
+.inp:hover{
+  background-color: #5c5858;
+  cursor: pointer;
+}
+label[for=wia]{
+  grid-column-start: 4;
+  grid-row-start: 7;
 }
 header input {
   display: none;
@@ -193,6 +284,55 @@ header .menu-btn:checked ~.menu-icon .navicon::after{
 footer {
   height: 200px;
   background-color: #000000;
+  display: grid;
+  grid-template: 70px repeat(2,65px)/repeat(5,1fr);
+}
+footer span{
+  color: white;
+
+}
+.strzalki:hover{
+cursor: pointer;
+}
+.wf{
+  width: 100%;
+}
+.ofer{
+  border: 1px solid black;
+  border-radius: 10px;
+  width:215px;
+  height: 301px;
+}
+.rof{
+  display: flex;
+  justify-content: space-around;
+}
+.title{
+  font-size: 20px;
+}
+.oferta span{
+  padding: 10px;
+  display: inline-block;
+}
+.tyt{
+  font-size: 35px;
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+#em{
+  margin-top: 20px;
+  grid-column: 5;
+  grid-row-start: 1;
+}
+#tel{
+  grid-column-start: 5;
+  grid-row-start: 3;
+}
+.tel{
+  display: none;
+}
+.komp{
+  display: block;
 }
 @media screen and (max-width:1171px ) {
   header{
@@ -245,9 +385,11 @@ footer {
   .menu-btn:checked .back .back nav{
     display: block;
   }
-  .start img{
-    src: url(../img/tlotel.jpg) !important;
+  .tel{
+    margin-top: 40px;
+    display: block;
   }
-
-
+  .komp{
+    display: none;
+  }
 }
