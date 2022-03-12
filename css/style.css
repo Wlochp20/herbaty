@@ -229,7 +229,7 @@ label[for=wia]{
 header input {
   display: none;
 }
-.menu_r {
+.menu-btn,.menu-icon {
   display: none;
   position: absolute;
   right: 10px;
@@ -237,7 +237,7 @@ header input {
   width: 100px;
   height: 20px;
 }
-.menu_r .navicon {
+ .navicon {
   margin: 40px;
   display: block;
   cursor: pointer;
@@ -246,7 +246,8 @@ header input {
   height: 6px;
   background: #f6f7eb;
 }
-.menu_r .navicon::before {
+
+.navicon::before {
   content: "";
   position: absolute;
   display: block;
@@ -258,19 +259,22 @@ header input {
   transition: transform 0.2s;
 }
 
-header .menu-btn:checked ~.menu-icon .navicon{
+ .menu-btn:checked ~.menu-icon .navicon{
   background-color: transparent;
 }
-header .menu-btn:checked ~.menu-icon .navicon::before{
+ .menu-btn:checked ~.menu-icon .navicon::before{
   transform: rotate(45deg) translate(13px);
   right: 20px;
 }
 
-header .menu-btn:checked ~.menu-icon .navicon::after{
+ .menu-btn:checked ~.menu-icon .navicon::after{
   transform: rotate(-45deg) translate(15px);
   right: 20px;
 }  
-.menu_r .navicon::after {
+.menu-btn:checked ~ .menu{
+  display: block;
+}
+.navicon::after {
   content: "";
   transition: transform 0.2s;
   display: block;
@@ -368,22 +372,40 @@ cursor: pointer;
   header{
     height: 140px;
   }
-  nav{
+  .menu {
     display: none;
+    width: 100%;
+    margin-top: 140px;
+   
+  }
+  .menu ul{
+    display: inline-block;
+    width: 100%;
+  }
+
+  .menu li{
+    background-color: #00000085;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 0.9px;
+    margin-left: -40px;
+    border-bottom: 2px solid black;
+  }
+  .menu li:hover{
+    background-color: #000000;
+
   }
   header img{
     content:url("../img/logotel.png");
     display: block;
     margin: 0 auto;
   }
-  .menu_r {
+  .menu-icon {
     display: block;
   }
-  .menu_r span{
-    display: block;
-  }
-  .menu-btn:checked .back .back nav{
-    display: block;
+  .menu-btn{
+    display: none;
   }
   .tel{
     margin-top: 40px;
