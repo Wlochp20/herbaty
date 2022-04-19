@@ -428,7 +428,7 @@ cursor: pointer;
   .ta:hover .zwijana li{
     display: block;
     
-    border-top: 3px solid rgba(247, 247, 247, 0.103);
+    border-top: 3  px solid rgba(247, 247, 247, 0.103);
     margin: 0;
   }
   .zwijana{
